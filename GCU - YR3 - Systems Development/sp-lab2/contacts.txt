@@ -1,0 +1,12 @@
+Name:Steve Parker
+Phone:44 789 777 2100
+Email:steve@steve-parker.org
+Web:http://steve-parker.org/
+Name:Richard Stallman
+Phone:10 1111 1111
+Email:rms@stallman.org
+Web:http://richard-stallman.com/
+Name:Linus Torvalds
+Phone:33 444 44444
+Email:torvalds@osdl.org
+Web:http://www.linus.org/

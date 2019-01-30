@@ -1,0 +1,69 @@
+.TH safeDel 1 "NOVEMBER, 2018" "" "Safe Del Utility"
+
+.SH NAME
+safeDel \- A utility that creates recyling bin functionality with recoverable files for accidental deletion
+
+.SH SYNOPSIS
+.B safeDel
+.RI [file ...]
+.br
+.B safeDel
+.RI [options]
+.br
+.B safeDel
+.RI [-lt]
+.br
+.B safeDel
+.RI [-r]
+.RI file ..
+.br
+
+.SH DESCRIPTION
+.B safeDel
+is a utility that has been created as a failsafe for accidental file deletion, users can recover files by using the "-r [file ..]" switch
+
+.SH OPTIONS
+.B
+.IP -l
+Output a list of contents inside the trashCan directory with their file size (in a human readable format like Ki, Mb, Gb etc).
+.IP -r
+Recover a specified fiel from the trashCan and place it into the current directory.
+.IP -d
+Delete a file interactively from the trashcan
+.IP -t
+Display a total usage in bytes of the trashCan's directory
+.IP -m
+Start the monitor script process
+.IP -k
+Kill the monitor script process
+.IP -s
+Interactively select a file to delete and send to the trash can
+
+.SH NOTES
+Student: Callum Carmicheal
+
+Student ID: S1829709
+
+
+.SH EXAMPLE
+.B safeDel
+.RI [-lt]
+.br
+.RS 7
+List files and List total of the Recycling Bin
+.RE
+
+.B safeDel
+.RI [-d]
+.br
+.RS 7
+Delete files interactively from the current directory or navigate through the directories to find the file you want
+.RE
+
+.B safeDel
+.RI [-r]
+.RI information.docx
+.br
+.RS 7
+Recover information.docx from the recylcing bin to the current folder
+.RE

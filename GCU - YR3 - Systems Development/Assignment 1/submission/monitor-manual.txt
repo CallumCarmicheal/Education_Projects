@@ -1,0 +1,63 @@
+safeDel(1)                     Safe Del Utility                     safeDel(1)
+
+
+
+NAME
+       safeDel - A utility that creates recyling bin functionality with recov-
+       erable files for accidental deletion
+
+
+SYNOPSIS
+       safeDel [file...]
+       safeDel [options]
+       safeDel [-lt]
+       safeDel [-r] file..
+
+
+DESCRIPTION
+       safeDel is a utility that has been created as a failsafe for accidental
+       file  deletion,  users  can  recover  files by using the "-r [file ..]"
+       switch
+
+
+OPTIONS
+       -l     Output a list of contents inside  the  trashCan  directory  with
+              their  file  size  (in  a  human readable format like Ki, Mb, Gb
+              etc).
+
+       -r     Recover a specified fiel from the trashCan and place it into the
+              current directory.
+
+       -d     Delete a file interactively from the trashcan
+
+       -t     Display a total usage in bytes of the trashCan's directory
+
+       -m     Start the monitor script process
+
+       -k     Kill the monitor script process
+
+       -s     Interactively select a file to delete and send to the trash can
+
+
+NOTES
+       Student: Callum Carmicheal
+
+       Student ID: S1829709
+
+
+
+EXAMPLE
+       safeDel [-lt]
+              List files and List total of the Recycling Bin
+
+       safeDel [-d]
+              Delete  files  interactively from the current directory or navi-
+              gate through the directories to find the file you want
+
+       safeDel [-r] information.docx
+              Recover information.docx from the recylcing bin to  the  current
+              folder
+
+
+
+                                NOVEMBER, 2018                      safeDel(1)
